@@ -1,0 +1,121 @@
+/* ===== Body & Background ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #001133; /* fallback dark blue */
+  background-image: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== Tabs Container ===== */
+#tabs {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* ===== Tabs Buttons ===== */
+#tabs button {
+  padding: 12px 25px;
+  border: none;
+  background: rgba(0, 102, 204, 0.85);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#tabs button:hover {
+  background: rgba(0, 153, 255, 0.95);
+  transform: translateY(-2px);
+}
+
+#tabs button.active {
+  background: #00aaff;
+  box-shadow: 0 6px 20px rgba(0, 170, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ===== Page Content ===== */
+#page-content {
+  background: rgba(0, 0, 80, 0.85);
+  margin: 0 20px 40px 20px;
+  padding: 30px;
+  border-radius: 40px;
+  min-height: 400px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 100, 0.7);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+/* ===== Admin Page Styling ===== */
+body.admin {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0, 0, 50, 0.7);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 100, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+body.admin h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00ccff;
+}
+
+body.admin input,
+body.admin textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #0077cc;
+  background: rgba(0, 51, 102, 0.6);
+  color: #fff;
+  font-size: 16px;
+}
+
+body.admin textarea {
+  min-height: 150px;
+}
+
+body.admin button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #0077cc;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+body.admin button:hover {
+  background: #00aaff;
+  transform: translateY(-2px);
+}
